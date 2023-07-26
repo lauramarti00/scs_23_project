@@ -21,7 +21,13 @@
        
 
         <p>Available films:</p>
-        {% for film in films %}
+        <!--{% for film in films %}
         <div><p>{{film.title}}</p><p>{{film.author}}</p></div>
-        {% endfor %}
+        {% endfor %}-->
+        <div><p>film pescato dal db</p></div>
+        {% if film %}
+            <div><p>{{film}}</p></div>
+        {% else %}
+            <div><p>no film selected</p></div>
+        {% endif %}
 {% endblock %}
